@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.michaelsinner.trainingicfes.MenuPreguntas">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/titulo"
+        android:textColor="#a23250bc"
+        android:textSize="40dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú Preguntas"
+        android:id="@+id/txtViewMenu"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Preguntas"
+        android:id="@+id/btnAgregarPreguntas"
+        android:layout_below="@+id/txtViewMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Preguntas"
+        android:id="@+id/btnEditarPreguntas"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/btnEliminarPreguntas"
+        android:layout_alignEnd="@+id/btnEliminarPreguntas" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Preguntas"
+        android:id="@+id/btnEliminarPreguntas"
+        android:layout_below="@+id/btnAgregarPreguntas"
+        android:layout_alignStart="@+id/btnAgregarPreguntas" />
+
+
+</RelativeLayout>
