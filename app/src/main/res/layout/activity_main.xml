@@ -7,33 +7,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorMain"
     tools:context="com.example.michaelsinner.trainingicfes.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txEntrar"
+        android:id="@+id/btnEntrar"
+        android:layout_marginTop="123dp"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txAcercaDe"
+        android:id="@+id/btnAcercaDe"
+        android:layout_below="@+id/btnEntrar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/titulo"
-        android:textColor="#a23250bc"
-        android:textSize="40dp"
-        android:id="@+id/textView" />
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:id="@+id/tvTitulo"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
 
-    <Button
+    <TextView
+        android:text="@string/txAño"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entrar    "
-        android:id="@+id/btnEntrar"
-        android:layout_marginTop="93dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Acerca de"
-        android:id="@+id/btnAcercaDe"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/btnEntrar"
-        android:layout_alignEnd="@+id/btnEntrar" />
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvAño" />
 </RelativeLayout>

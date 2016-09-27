@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorMain"
     tools:context="com.example.michaelsinner.trainingicfes.MenuPrincipal">
 
     <TextView
@@ -15,52 +16,54 @@
         android:gravity="center_horizontal"
         android:text="@string/titulo"
         android:textColor="#a23250bc"
-        android:textSize="40dp"
-        android:id="@+id/textView" />
+        android:textSize="40sp"
+        android:id="@+id/tvTitulo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menú Principal"
-        android:id="@+id/txtViewMenu"
-        android:layout_below="@+id/textView"
+        android:text="@string/txMenuPrincipal"
+        android:id="@+id/tvMenuPrincipal"
+        android:layout_below="@+id/tvTitulo"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar partida"
+        android:text="@string/txIniciarPartida"
         android:id="@+id/btnIniciar"
         android:layout_marginTop="49dp"
-        android:layout_below="@+id/txtViewMenu"
+        android:layout_below="@+id/tvMenuPrincipal"
         android:layout_alignEnd="@+id/btnAgregarPreguntas"
         android:layout_alignStart="@+id/btnAgregarPreguntas" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver Logros"
-        android:id="@+id/btnVerLogros"
-        android:layout_below="@+id/btnAgregarPreguntas"
-        android:layout_alignStart="@+id/btnAgregarPreguntas"
-        android:layout_alignEnd="@+id/btnAgregarPreguntas" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agregar Preguntas"
+        android:text="@string/txAgregarPreguntas"
         android:id="@+id/btnAgregarPreguntas"
-        android:layout_below="@+id/btnIniciar"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/btnVerLogros"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Salir"
-        android:id="@+id/btnSalir"
-        android:layout_below="@+id/btnVerLogros"
-        android:layout_alignEnd="@+id/btnVerLogros"
-        android:layout_alignStart="@+id/btnVerLogros" />
+        android:text="@string/txAgregarEstudiantes"
+        android:id="@+id/btnAgregarEstudiante"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/btnAgregarPreguntas"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txVerLogros"
+        android:id="@+id/btnVerLogros"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnIniciar"
+        android:layout_alignStart="@+id/btnIniciar"
+        android:layout_alignEnd="@+id/btnAgregarEstudiante" />
 
 
 </RelativeLayout>

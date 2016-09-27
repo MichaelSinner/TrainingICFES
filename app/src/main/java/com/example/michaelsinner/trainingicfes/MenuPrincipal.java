@@ -26,7 +26,9 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
             case R.id.btnAgregarPreguntas:
                 Intent puente3 = new Intent(MenuPrincipal.this,MenuPreguntas.class);
                 startActivity(puente3);
+
                 break;
+
         }
     }
 }

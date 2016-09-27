@@ -1,4 +1,24 @@
 <resources>
+    --principal
     <string name="app_name">TrainingICFES</string>
-    <string name="titulo">TrainingICFES</string>
+    <string name="titulo">Saber Go!</string>
+    <string name="txEntrar">Entrar</string>
+    <string name="txAcercaDe">Acerca de</string>
+    <string name="txAño">2016</string>
+    --Login
+    <string name="txUsuario">Usuario</string>
+    <string name="txContraseña">Contraseña</string>
+    <string name="txIngresar">Ingresar</string>
+    --Menú Principal
+    <string name="txMenuPrincipal">Menú Principal</string>
+    <string name="txIniciarPartida">Iniciar Partida</string>
+    <string name="txAgregarPreguntas">Agregar Preguntas</string>
+    <string name="txAgregarEstudiantes">Agregar Estudiantes</string>
+    <string name="txVerLogros">Ver Logros</string>
+
+    -Acerca de
+    <string name="Comentario">Esta aplicación es desarrollada por Michael Peñaloza y Ana Sotelo para la clase de Electiva 2 - Móviles
+                de la Universidad Antonio Nariño
+    </string>
+
 </resources>

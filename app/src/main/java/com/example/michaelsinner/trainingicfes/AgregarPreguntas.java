@@ -11,7 +11,7 @@ public class AgregarPreguntas extends AppCompatActivity implements AdapterView.O
 
     Spinner spnArea;
     Spinner spnCompetencia;
-    ArrayAdapter<String> aaArea, aaCompetenciaA,aaClear;
+    ArrayAdapter<String> aaArea, aaCompetenciaA,aaClear,aaCompetenciaB;
     String [] opcionesArea = new String[]{"Lectura Critica","Matemáticas","Sociales y ciudadanas","Ciencias Naturales","Ingles"};
     String [] opcionesCompetenciasA = new String[]{"Identificar y entender contenidos de un texto","Comprender como se articulan las partes de un texto","Reflexionar y evaluar contenido de un texto"};
     String [] opcionesCompetenciasB = new String[]{"Lectura Critica","Matemáticas","Sociales y ciudadanas","Ciencias Naturales","Ingles"};
@@ -45,8 +45,8 @@ public class AgregarPreguntas extends AppCompatActivity implements AdapterView.O
                 if (seleccion == 1)
                 {
                     spnCompetencia.setAdapter(aaCompetenciaA);
-                }else{
-                    spnCompetencia.setAdapter(aaClear);
+                }else if (seleccion == 2){
+                    spnCompetencia.setAdapter(aaCompetenciaB);
                 }
 
 
