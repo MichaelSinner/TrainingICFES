@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_diagnostico"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background01"
+    tools:context="com.example.michaelsinner.trainingicfes.Diagnostico">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:id="@+id/tvEnunciado"
+            android:text="Naturaleza del espiritu \n Solía suponerse en la ciencia que si todo fuese conocido acerca del universo en un momento particular, entonces podríamos predecir qué ocurriría a lo largo de todo el futuro… Sin embargo, una ciencia más moderna ha llegado a la conclusión de que cuando estamos tratando con átomos y electrones somos bastante incapaces de saber el estado exacto de ellos, pues nuestros instrumentos mismos están hechos de átomos y electrones. Entonces la idea de poder conocer el estado exacto del universo debe ser descartada realmente cuando se trata de pequeña escala. Esto significa que la teoría que sostenía que así como los eclipses están predestinados, también lo están todas nuestras acciones, debe descartarse también. Tenemos una voluntad que es capaz de determinar la acción de los átomos en una pequeña porción del cerebro, o quizás en su totalidad. El resto del cuerpo actúa para amplificar esto."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEnunciado"
+            android:id="@+id/tvPregunta"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:text="¿Cómo se relaciona el título y el contenido del texto?"
+            android:layout_marginTop="20sp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/cbxOpcionA"
+            android:layout_width="match_parent"
+            android:checked="false"
+            android:layout_height="match_parent"
+            android:text="A- El texto describe la naturaleza espiritual del universo."
+            android:layout_below="@+id/tvPregunta"
+            android:layout_alignParentStart="true"
+            android:background="#FFFFFF"
+            android:textColor="#000000"/>
+
+        <CheckBox
+            android:id="@+id/cbxOpcionB"
+            android:layout_width="match_parent"
+            android:checked="false"
+            android:layout_height="match_parent"
+            android:text="B- El texto presenta dos teorías sobre la naturaleza del espíritu."
+            android:layout_below="@+id/cbxOpcionA"
+            android:layout_alignParentStart="true"
+            android:background="#FFFFFF"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/cbxOpcionC"
+            android:layout_width="match_parent"
+            android:checked="false"
+            android:layout_height="match_parent"
+            android:text="C- El Texto sostiene que el espíritu es libre por naturaleza."
+            android:layout_below="@+id/cbxOpcionB"
+            android:layout_alignParentStart="true"
+            android:background="#FFFFFF"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/cbxOpcionD"
+            android:layout_width="match_parent"
+            android:checked="false"
+            android:layout_height="match_parent"
+            android:text="D- El texto contradice la concepción del espiritu de la ciencia moderna."
+            android:layout_below="@+id/cbxOpcionC"
+            android:layout_alignParentStart="true"
+            android:background="#FFFFFF"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"
+            android:layout_below="@id/cbxOpcionD"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

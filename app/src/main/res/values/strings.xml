@@ -21,4 +21,33 @@
                 de la Universidad Antonio Nariño
     </string>
 
+    --Menú Partida
+    <string name="txMenuPartida">Menú Partida</string>
+    <string name="txPruebasDiarias">Partida Diagnóstico</string>
+    <string name="txAsteroides">Asteroides Terrestres</string>
+    <string name="txSimulacro">Simulacro Saber Go!</string>
+
+    --Diagnostico
+    <string name="title_activity_diagnostico">Prueba Diagnóstico</string>
+    <string name="dummy_button">Aceptar</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_asteroides">Map</string>
+
+    --Logros
+    <string name="txSubtituloLogros">Logros</string>
+
+    --Menú Preguntas
+    <string name="txTituloMenuPreguntas">Menú de Preguntas</string>
+    <string name="txAgregarPregunta">Agregar Pregunta</string>
+    <string name="txEditarPregunta">Editar Preguntas</string>
+    <string name="txEliminarPregunta">Eliminar Preguntas</string>
+
+    --Menú Estudiante
+    <string name="txTituloMenuEstudiantes">Menú de edición Estudiantes</string>
+    <string name="txAgregarEstudiante">Agregar Estudiante</string>
+    <string name="txEditarEstudiante">Editar Estudiante</string>
+    <string name="txEliminarEstudiantes">Eliminar Estudiante</string>
+
+
+    <string name="txDocenteEstudiante">Docente o Estudiante</string>
 </resources>

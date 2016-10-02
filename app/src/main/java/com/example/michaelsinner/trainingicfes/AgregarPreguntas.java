@@ -9,15 +9,15 @@ import android.widget.Spinner;
 
 public class AgregarPreguntas extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    Spinner spnArea;
-    Spinner spnCompetencia;
-    ArrayAdapter<String> aaArea, aaCompetenciaA,aaClear,aaCompetenciaB;
+    Spinner spnArea, spnCompetencia;
+
+    ArrayAdapter<String> aaArea, aaCompetenciaA, aaClear, aaCompetenciaB, aaCompetenciaC, aaCompetenciaD, aaCompetenciaE;
     String [] opcionesArea = new String[]{"Lectura Critica","Matemáticas","Sociales y ciudadanas","Ciencias Naturales","Ingles"};
     String [] opcionesCompetenciasA = new String[]{"Identificar y entender contenidos de un texto","Comprender como se articulan las partes de un texto","Reflexionar y evaluar contenido de un texto"};
-    String [] opcionesCompetenciasB = new String[]{"Lectura Critica","Matemáticas","Sociales y ciudadanas","Ciencias Naturales","Ingles"};
-    String [] opcionesCompetenciasC = new String[]{"Lectura Critica","Matemáticas","Sociales y ciudadanas","Ciencias Naturales","Ingles"};
-    String [] opcionesCompetenciasD = new String[]{"Lectura Critica","Matemáticas","Sociales y ciudadanas","Ciencias Naturales","Ingles"};
-    String [] opcionesCompetenciasE = new String[]{"Lectura Critica","Matemáticas","Sociales y ciudadanas","Ciencias Naturales","Ingles"};
+    String [] opcionesCompetenciasB = new String[]{"Interpretación y representación","Formulación y ejecución","Argumentación"};
+    String [] opcionesCompetenciasC = new String[]{"Pensamiento social","Interpretación y analisis de perspectivas","Pensamiento reflexivo y sistemático"};
+    String [] opcionesCompetenciasD = new String[]{"Uso comprensivo del conocimiento científico","Explicación de fenómenos","Indagación"};
+    String [] opcionesCompetenciasE = new String[]{"Parte1","Parte2","Parte3","Parte4","Parte5","Parte6","Parte7","Parte8"};
     String [] opcClear = new String[0];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,10 @@ public class AgregarPreguntas extends AppCompatActivity implements AdapterView.O
 
         aaArea = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,opcionesArea);
         aaCompetenciaA = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,opcionesCompetenciasA);
+        aaCompetenciaB = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,opcionesCompetenciasB);
+        aaCompetenciaC = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,opcionesCompetenciasC);
+        aaCompetenciaD = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,opcionesCompetenciasD);
+        aaCompetenciaE = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,opcionesCompetenciasE);
         aaClear = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,opcClear);
 
         spnArea.setAdapter(aaArea);
@@ -42,12 +46,17 @@ public class AgregarPreguntas extends AppCompatActivity implements AdapterView.O
         {
             case R.id.spnArea:
                 int seleccion = spnArea.getSelectedItemPosition();
-                if (seleccion == 1)
-                {
+
+                if (seleccion == 0)
                     spnCompetencia.setAdapter(aaCompetenciaA);
-                }else if (seleccion == 2){
+                else if (seleccion == 1)
                     spnCompetencia.setAdapter(aaCompetenciaB);
-                }
+                else if(seleccion == 2)
+                    spnCompetencia.setAdapter(aaCompetenciaC);
+                else if(seleccion == 3)
+                    spnCompetencia.setAdapter(aaCompetenciaD);
+                else if(seleccion == 4)
+                    spnCompetencia.setAdapter(aaCompetenciaE);
 
 
                 break;

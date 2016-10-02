@@ -8,6 +8,54 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background02"
     tools:context="com.example.michaelsinner.trainingicfes.MenuPartida">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/titulo"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:id="@+id/tvTitulo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txMenuPartida"
+        android:id="@+id/tvMenuPartida"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txAsteroides"
+        android:id="@+id/btnAsteroides"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/btnIniciar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txPruebasDiarias"
+        android:id="@+id/btnIniciar"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/tvMenuPartida"
+        android:layout_alignEnd="@+id/btnAsteroides"
+        android:layout_alignStart="@+id/btnAsteroides" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txSimulacro"
+        android:id="@+id/btnSimulacro"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/btnAsteroides"
+        android:layout_alignStart="@+id/btnAsteroides"
+        android:layout_alignEnd="@+id/btnAsteroides" />
+
 
 </RelativeLayout>

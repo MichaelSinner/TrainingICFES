@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background05"
     tools:context="com.example.michaelsinner.trainingicfes.MenuPreguntas">
 
     <TextView
@@ -16,20 +17,20 @@
         android:text="@string/titulo"
         android:textColor="#a23250bc"
         android:textSize="40dp"
-        android:id="@+id/textView" />
+        android:id="@+id/tvTitulo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menú Preguntas"
+        android:text="@string/txTituloMenuPreguntas"
         android:id="@+id/txtViewMenu"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/tvTitulo"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agregar Preguntas"
+        android:text="@string/txAgregarPregunta"
         android:id="@+id/btnAgregarPreguntas"
         android:layout_below="@+id/txtViewMenu"
         android:layout_centerHorizontal="true"
@@ -38,19 +39,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Editar Preguntas"
-        android:id="@+id/btnEditarPreguntas"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/btnEliminarPreguntas"
-        android:layout_alignEnd="@+id/btnEliminarPreguntas" />
+        android:text="@string/txEliminarPregunta"
+        android:id="@+id/btnEliminarPreguntas"
+        android:layout_below="@+id/btnAgregarPreguntas"
+        android:layout_alignStart="@+id/btnAgregarPreguntas" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eliminar Preguntas"
-        android:id="@+id/btnEliminarPreguntas"
-        android:layout_below="@+id/btnAgregarPreguntas"
-        android:layout_alignStart="@+id/btnAgregarPreguntas" />
+        android:text="@string/txEditarPregunta"
+        android:id="@+id/btnEditarPreguntas"
+        android:layout_below="@+id/btnEliminarPreguntas"
+        android:layout_alignStart="@+id/btnEliminarPreguntas"
+        android:layout_marginTop="27dp"
+        android:layout_alignEnd="@+id/btnEliminarPreguntas" />
 
 
 </RelativeLayout>
