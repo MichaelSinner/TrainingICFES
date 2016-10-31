@@ -9,13 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/background02"
-    tools:context="com.example.michaelsinner.trainingicfes.MenuPartida">
+    tools:context="com.example.michaelsinner.sabergo.Activities.MenuPartida">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="@string/titulo"
+        android:text="@string/txSaberGo"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         android:id="@+id/tvTitulo" />

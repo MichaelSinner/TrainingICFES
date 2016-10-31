@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_administrador"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#237fca"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.michaelsinner.sabergo.Activities.AddAdministrador">
+
+    <TextView
+        android:text="@string/txSubAgregarAdministrador"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSubAddAdmin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp" />
+
+    <TextView
+        android:text="@string/txNombreAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSubAddAdmin"
+        android:textSize="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/tvNombreAdmin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#ffffff"
+        android:paddingTop="15dp"
+        android:ems="10"
+        android:id="@+id/etNombreAdmin"
+        android:layout_below="@+id/tvNombreAdmin"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvSubAddAdmin" />
+
+    <TextView
+        android:text="@string/txColegioAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/etNombreAdmin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvColegioAdmin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="#ffffff"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/tvColegioAdmin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etColegioAdmin"
+        android:layout_alignEnd="@+id/etNombreAdmin" />
+
+    <TextView
+        android:text="@string/txUsuarioAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/etColegioAdmin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvUserAdmin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="#ffffff"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/tvUserAdmin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etUserAdmin"
+        android:layout_alignEnd="@+id/etColegioAdmin" />
+
+    <TextView
+        android:text="@string/txContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/etUserAdmin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvContraseñaAdmin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:background="#ffffff"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/tvContraseñaAdmin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etContraseñaAdmin"
+        android:layout_alignEnd="@+id/etUserAdmin" />
+
+    <TextView
+        android:text="@string/txCorreoAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/etContraseñaAdmin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvCorreoAdmin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:background="#ffffff"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/tvCorreoAdmin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etCorreoAdmin"
+        android:layout_alignEnd="@+id/etContraseñaAdmin" />
+
+    <Button
+        android:text="Registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCorreoAdmin"
+        android:layout_toEndOf="@+id/tvContraseñaAdmin"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="43dp"
+        android:id="@+id/btnRegistrarAdmin" />
+
+
+</RelativeLayout>

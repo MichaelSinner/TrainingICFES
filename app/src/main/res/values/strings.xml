@@ -1,9 +1,11 @@
 <resources>
+    -- Nombre de la aplicacion
+    <string name="app_name">Saber Go</string>
     --principal
-    <string name="app_name">TrainingICFES</string>
-    <string name="titulo">Saber Go!</string>
+    <string name="txSaberGo">Saber Go!</string>
     <string name="txEntrar">Entrar</string>
     <string name="txAcercaDe">Acerca de</string>
+    <string name="txRegistrar">Registrarse</string>
     <string name="txAño">2016</string>
     --Login
     <string name="txUsuario">Usuario</string>
@@ -12,9 +14,51 @@
     --Menú Principal
     <string name="txMenuPrincipal">Menú Principal</string>
     <string name="txIniciarPartida">Iniciar Partida</string>
-    <string name="txAgregarPreguntas">Agregar Preguntas</string>
-    <string name="txAgregarEstudiantes">Agregar Estudiantes</string>
+    <string name="txModificarAdministrador">Modificar Administradores</string>
+    <string name="txtxModificarAlumnos">Modificar Alumnos</string>
+    <string name="txModificarPreguntas">Modificar Preguntas</string>
     <string name="txVerLogros">Ver Logros</string>
+    -- Sign Up
+    <string name="txSubSignup">Ingrese los siguientes datos para registrarse</string>
+    <string name="txNombreEstudiante">Nombre :</string>
+    <string name="txCorreoEstudiante">Correo :</string>
+    <string name="txUsuarioEstudiante">Usuario :</string>
+    <string name="txContraseñaEstudiante">Contraseña :</string>
+    <string name="txColegioEstudiante">Colegio :</string>
+
+    -- Agregar Administrador
+    <string name="txSubAgregarAdministrador">Agregar nuevo administrador</string>
+    <string name="txNombreAdmin">Nombre :</string>
+    <string name="txColegioAdmin">Colegio :</string>
+    <string name="txUsuarioAdmin">Usuario :</string>
+    <string name="txContraseñaAdmin">Contraseña :</string>
+    <string name="txCorreoAdmin">Correo Electronico :</string>
+    <string name="field_error">Ingresa un valor</string>
+
+    -- Editar Administradores
+    <string name="txSubEditAdmin">Editar Administrador</string>
+    <string name="txNombreAdminEdit">Nombre Administrador</string>
+    <string name="txColegioAdminEdit">Colegio Administrador</string>
+    <string name="txCorreoAdminEdit">Correo Administrador</string>
+    <string name="txUsuarioAdminEdit">Usuario Administrador</string>
+    <string name="txPasswordAdminEdit">Contraseña Administrador</string>
+
+    -- Menú Editar
+    <string name="txBtnActualizar">Actualizar</string>
+    <string name="txBtnEliminar">Eliminar</string>
+
+    -- Lista estudiantes
+    <string name="txSubtitulolistaAlumno">Lista de Alumnos </string>
+
+    -- Editar Alumnos
+    <string name="txSubEditAlumnos">Editar Alumno</string>
+    <string name="txNombreAlumnoEdit">Nombre Alumno</string>
+    <string name="txColegioAlumnoEdit">Colegio Alumno</string>
+    <string name="txCorreoAlumnoEdit">Correo Alumno</string>
+    <string name="txUsuarioAlumnoEdit">Usuario Alumno</string>
+    <string name="txPasswordAlumnoEdit">Contraseña Alumno</string>
+
+
 
     -Acerca de
     <string name="Comentario">Esta aplicación es desarrollada por Michael Peñaloza y Ana Sotelo para la clase de Electiva 2 - Móviles
@@ -49,5 +93,31 @@
     <string name="txEliminarEstudiantes">Eliminar Estudiante</string>
 
 
+    -- Lista Editar Administradores
+    <string name="txSubtitulolistaAdmin">Lista de Administradores :</string>
+    <string name="txNombreAdministrador">Nombre:</string>
+    <string name="txColegioAdministrador">Colegio:</string>
+    <string name="txUsuarioAdministrador">Usuario:</string>
+    <string name="txContraseñaAdministrador">Contraseña:</string>
+    <string name="txGuardarCambios">Guardar</string>
+
+
     <string name="txDocenteEstudiante">Docente o Estudiante</string>
+
+    -- Add Edit Admin
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_menu_principal_admin">MenuPrincipalAdmin</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_principal_alumno">MenuPrincipalAlumno</string>
+    <string name="title_activity_lista_administradores">ListaAdministradores</string>
+    <string name="title_activity_lista_alumnos">ListaAlumnos</string>
+    <string name="title_activity_lista_preguntas">ListaPreguntas</string>
+    <string name="title_activity_details_admin">DetailsAdmin</string>
 </resources>
